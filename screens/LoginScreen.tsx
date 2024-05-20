@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,6 @@ import {
 import FormInput from '../components/FormInput';
 import SocialButton from '../components/SocialButton';
 import { windowHeight } from '../utils/Dimentions';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';
 import { MaterialIndicator, } from 'react-native-indicators';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -18,8 +17,6 @@ import { colors } from '../css/colorsIndex';
 
 const LoginScreen = ({ navigation }: any) => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [Login, setLogin] = useState(true);
   const [Loading, setLoading] = useState(false);
 
 
@@ -65,25 +62,7 @@ const LoginScreen = ({ navigation }: any) => {
     }
   };
 
-  // const handleLogin = async () => {
-  //   setLoading(true)
-  //   if (email.length > 10) {
-  //     setTimeout(() => {
-  //       navigation.replace('Password')
-  //       setLoading(false)
-  //       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy)
-  //     }, 2000);
 
-  //   }
-  //   if (email) {
-  //     try {
-  //       setLoading(false)
-  //       await AsyncStorage.setItem('Login', JSON.stringify(email));
-  //     } catch (e) {
-  //       console.log(`isLoggedIn in error ${e}`)
-  //     }
-  //   }
-  // }
 
 
   return (

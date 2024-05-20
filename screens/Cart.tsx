@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
-import { FontAwesome, FontAwesome6, Octicons, AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import CartItemList from '../components/CartItemList';
 import { colors } from '../css/colorsIndex';
@@ -44,16 +44,16 @@ const styles = StyleSheet.create({
 
 	checkoutsub: {
 		fontFamily: 'Poppins_500Medium',
-		color: "#151515"
+		color: colors.black
 	},
 
 	checkoutAmount: {
-		color: "#151515",
+		color: colors.black,
 		fontFamily: 'Poppins_500Medium',
 	},
 
 	checkoutText: {
-		color: "#fff",
+		color: colors.white,
 		fontFamily: 'Poppins_500Medium',
 	},
 
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
 	titleContainerText: {
 		fontFamily: 'Poppins_500Medium',
 		fontSize: 14,
-		color: "#151515"
+		color: colors.black
 	},
 
 	titleContainer: {

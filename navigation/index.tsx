@@ -1,7 +1,6 @@
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import * as React from 'react';
-import { ColorSchemeName, View, Image, Dimensions, SafeAreaView, ActivityIndicator } from 'react-native';
-import { Asset } from 'expo-asset';
+import { ColorSchemeName } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import AppStack from './AppStack';
 import * as SplashScreen from 'expo-splash-screen';

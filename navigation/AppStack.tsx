@@ -1,18 +1,17 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { RootTabParamList, RootTabScreenProps } from '../types';
+import { RootTabParamList } from '../types';
 import useColorScheme from '../hooks/useColorScheme';
 import Colors from '../constants/Colors';
-import { Platform, View, Image, Text, StatusBar } from 'react-native';
+import { Platform } from 'react-native';
 import { colors } from '../css/colorsIndex';
-import * as Haptics from 'expo-haptics';
 import { useNavigation } from '@react-navigation/native';
 import LoginScreen from '../screens/LoginScreen';
 import PasswordScreen from '../screens/PasswordScreen';
 import Menu from '../screens/Menu';
 import Cart from '../screens/Cart';
-import { Entypo, AntDesign, Ionicons, FontAwesome } from '@expo/vector-icons';
+import { AntDesign, Ionicons } from '@expo/vector-icons';
 import ProductDetails from '../components/ProductDetails';
 
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
@@ -74,7 +73,7 @@ function BottomTabNavigator() {
         component={Cart}
         options={() => ({
           title: 'Cart',
-          tabBarIcon: ({ color, size }) => <Ionicons name="bag-handle" color={color} size={30} />,
+          tabBarIcon: ({ color, size }) => <Ionicons name="bag-handle" color={color} size={size} />,
         })}
       />
 

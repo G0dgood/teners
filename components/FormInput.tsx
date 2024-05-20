@@ -1,4 +1,3 @@
-import { AntDesign } from '@expo/vector-icons';
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import { windowHeight, windowWidth } from '../utils/Dimentions';

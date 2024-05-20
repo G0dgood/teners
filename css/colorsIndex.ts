@@ -1,4 +1,3 @@
-import { YellowBox } from "react-native";
 
 export const colors = {
  

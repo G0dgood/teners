@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Dimensions } from "react-native"
+import { View, StyleSheet, Dimensions } from "react-native"
 export const SLIDER_WIDTH = Dimensions.get('window').width + 130
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.7)
 
@@ -8,8 +8,6 @@ const CarouselCardItem = ({ item, index }: any) => {
 
     return (
         <View style={styles.container} key={index}>
-
-
 
         </View>
     )
